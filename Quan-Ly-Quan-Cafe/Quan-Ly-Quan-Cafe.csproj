@@ -71,6 +71,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLyQuanCafeDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FAccountProfile.resx">
+      <DependentUpon>FAccountProfile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
     </EmbeddedResource>
