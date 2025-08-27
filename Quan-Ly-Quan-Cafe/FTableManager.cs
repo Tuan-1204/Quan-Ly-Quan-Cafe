@@ -21,5 +21,17 @@ namespace Quan_Ly_Quan_Cafe
         {
             this.Close();
         }
+
+        private void aDMINToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FAdmin fAdmin = new FAdmin();
+            fAdmin.ShowDialog();
+        }
+
+        private void thôngTinCaNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FAccountProfile fAccountProfile = new FAccountProfile();
+            fAccountProfile.ShowDialog();
+        }
     }
 }

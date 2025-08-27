@@ -16,5 +16,10 @@ namespace Quan_Ly_Quan_Cafe
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
