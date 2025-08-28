@@ -779,7 +779,7 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(349, 339);
             this.panel23.TabIndex = 6;
-            this.panel23.Paint += new System.Windows.Forms.PaintEventHandler(this.panel23_Paint);
+           
             // 
             // panel25
             // 
@@ -870,7 +870,7 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(399, 42);
             this.panel28.TabIndex = 5;
-            this.panel28.Paint += new System.Windows.Forms.PaintEventHandler(this.panel28_Paint);
+           
             // 
             // btnShowAccount
             // 
@@ -915,7 +915,7 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(399, 339);
             this.panel29.TabIndex = 4;
-            this.panel29.Paint += new System.Windows.Forms.PaintEventHandler(this.panel29_Paint);
+           
             // 
             // dtgvAccount
             // 

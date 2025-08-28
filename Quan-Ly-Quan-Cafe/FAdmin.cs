@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Quan_Ly_Quan_Cafe.DAO;
 
 namespace Quan_Ly_Quan_Cafe
 {
@@ -15,26 +17,15 @@ namespace Quan_Ly_Quan_Cafe
         public FAdmin()
         {
             InitializeComponent();
+            LoadAccountList();
         }
 
-        private void panel22_Paint(object sender, PaintEventArgs e)
+       void LoadAccountList()
         {
-
-        }
-
-        private void panel23_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel28_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel29_Paint(object sender, PaintEventArgs e)
-        {
-
+            //Truy vấn dữ liệu 
+            string query = "Exec USP_GetAccountByUserName  @userName"; // sử dụng stored procedure để truy vấn
+            DataProvider provider = new DataProvider(); 
+         dtgvAccount.DataSource = provider.ExecuteQuery(query, new object[] {"Admin"});
         }
     }
 }
