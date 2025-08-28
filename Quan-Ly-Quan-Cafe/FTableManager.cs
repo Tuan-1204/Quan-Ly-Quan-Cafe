@@ -14,24 +14,27 @@ namespace Quan_Ly_Quan_Cafe
     {
         public FTableManager()
         {
-            InitializeComponent();
+            InitializeComponent(); // Khởi tạo các thành phần giao diện của form
         }
 
+        // Sự kiện khi chọn menu "Đăng Xuất"
         private void đăngXuâtToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); // Đóng form quản lý bàn
         }
 
+        // Sự kiện khi chọn menu "Admin"
         private void aDMINToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FAdmin fAdmin = new FAdmin();
-            fAdmin.ShowDialog();
+            FAdmin fAdmin = new FAdmin(); // Tạo form quản trị
+            fAdmin.ShowDialog(); // Hiển thị form quản trị dưới dạng dialog (modal)
         }
 
+        // Sự kiện khi chọn menu "Thông Tin Cá Nhân"
         private void thôngTinCaNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FAccountProfile fAccountProfile = new FAccountProfile();
-            fAccountProfile.ShowDialog();
+            FAccountProfile fAccountProfile = new FAccountProfile(); // Tạo form thông tin cá nhân
+            fAccountProfile.ShowDialog(); // Hiển thị form thông tin cá nhân dưới dạng dialog (modal)
         }
     }
 }

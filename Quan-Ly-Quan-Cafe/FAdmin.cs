@@ -17,15 +17,21 @@ namespace Quan_Ly_Quan_Cafe
         public FAdmin()
         {
             InitializeComponent();
-            LoadAccountList();
+            LoadAccountList(); // Gọi hàm load danh sách tài khoản khi form khởi tạo
         }
 
-       void LoadAccountList()
+        // Hàm lấy danh sách tài khoản và hiển thị lên DataGridView
+        void LoadAccountList()
         {
-            //Truy vấn dữ liệu 
+            // Tạo câu truy vấn sử dụng stored procedure, có tham số @userName
             string query = "Exec USP_GetAccountByUserName  @userName"; // sử dụng stored procedure để truy vấn
-            DataProvider provider = new DataProvider(); 
-         dtgvAccount.DataSource = provider.ExecuteQuery(query, new object[] {"Admin"});
+
+            // Khởi tạo đối tượng DataProvider để thao tác với database
+            DataProvider provider = new DataProvider();
+
+            // Gọi hàm ExecuteQuery truyền vào câu truy vấn và mảng tham số (ở đây là "Admin")
+            // Kết quả trả về là một DataTable, gán vào DataSource của DataGridView để hiển thị
+            dtgvAccount.DataSource = provider.ExecuteQuery(query, new object[] { "Admin" });
         }
     }
 }
