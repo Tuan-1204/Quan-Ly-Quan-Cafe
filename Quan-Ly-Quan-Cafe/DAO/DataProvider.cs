@@ -10,8 +10,29 @@ namespace Quan_Ly_Quan_Cafe.DAO
 {
     public class DataProvider
     {
+        // chuyển đổi sang kiến trúc singleton
+        private static DataProvider instance; // biến instance chứa đối tượng DataProvider
+        // hàm khởi tạo
+        public static DataProvider Instance
+        {
+            get
+            {
+                if( instance == null) instance = new DataProvider(); return DataProvider.instance;
+            }
+            private set
+            {
+                DataProvider.instance = value;
+            }
+        }
+
+        //hàm dựng 
+        private DataProvider() { }
+
         //Kết nối database
         private string connectionSTR = @"Data Source=.\sqlexpress;Initial Catalog=QuanLyQuanCafe;Integrated Security=True;TrustServerCertificate=True";
+        
+       
+
         //Hàm thực thi câu lệnh truy vấn
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

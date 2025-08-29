@@ -20,18 +20,22 @@ namespace Quan_Ly_Quan_Cafe
             LoadAccountList(); // Gọi hàm load danh sách tài khoản khi form khởi tạo
         }
 
+
+        //hàm load danh sách món ăn
+        void LoadFoodList()
+        {
+            string query = "select * from Food"; // câu truy vấn
+            dtgvFood.DataSource = DataProvider.Instance.ExecuteQuery(query); // gán kết quả truy vấn vào DataGridView
+        }
+
         // Hàm lấy danh sách tài khoản và hiển thị lên DataGridView
         void LoadAccountList()
         {
             // Tạo câu truy vấn sử dụng stored procedure, có tham số @userName
             string query = "Exec USP_GetAccountByUserName  @userName"; // sử dụng stored procedure để truy vấn
-
-            // Khởi tạo đối tượng DataProvider để thao tác với database
-            DataProvider provider = new DataProvider();
-
             // Gọi hàm ExecuteQuery truyền vào câu truy vấn và mảng tham số (ở đây là "Admin")
             // Kết quả trả về là một DataTable, gán vào DataSource của DataGridView để hiển thị
-            dtgvAccount.DataSource = provider.ExecuteQuery(query, new object[] { "Admin" });
+            dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "Admin" });
         }
     }
 }
