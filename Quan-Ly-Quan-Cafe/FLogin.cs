@@ -45,7 +45,7 @@ namespace Quan_Ly_Quan_Cafe
         // nhiệm vụ xử ký tầng hiển thị
         public bool Login(string userName, string passWord)
         {
-            string query = "SELECT * FROM dbo.Account WHERE UserName = @userName AND PassWord = @passWord";
+            string query = "SELECT * FROM dbo.Account WHERE UserName COLLATE Latin1_General_CS_AS = @userName AND PassWord COLLATE Latin1_General_CS_AS = @passWord";
             object[] parameters = new object[] { userName, passWord };
             DataTable result = DataProvider.Instance.ExecuteQuery(query, parameters);
             return result.Rows.Count > 0;

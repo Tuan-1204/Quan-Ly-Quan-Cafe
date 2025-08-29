@@ -29,10 +29,12 @@ namespace Quan_Ly_Quan_Cafe.DAO
         //hàm đăng nhập
         public bool Login(string userName, string passWord)
         {
-            string query = "SELECT * FROM dbo.Account WHERE UserName = @userName AND PassWord = @passWord";
-            object[] parameters = new object[] { userName, passWord };
-            DataTable result = DataProvider.Instance.ExecuteQuery(query, parameters);
+            string query = "USP_Login @userName , @passWord";
+           
+            DataTable result = DataProvider.Instance.ExecuteQuery(query,new object[] {userName, passWord});
             return result.Rows.Count > 0;
         }
+
+        
     }
 }

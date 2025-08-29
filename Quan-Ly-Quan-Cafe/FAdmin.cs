@@ -20,7 +20,6 @@ namespace Quan_Ly_Quan_Cafe
            
         }
 
-
-        
+       
     }
 }
