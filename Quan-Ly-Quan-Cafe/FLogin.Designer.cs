@@ -152,10 +152,8 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txbUserName;
         private System.Windows.Forms.Label lblTenDangNhap;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txbPassWord;
         private System.Windows.Forms.Label txbMatKhau;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnExit;

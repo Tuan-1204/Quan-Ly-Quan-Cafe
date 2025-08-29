@@ -88,14 +88,14 @@
             // thôngTinCaNhânToolStripMenuItem
             // 
             this.thôngTinCaNhânToolStripMenuItem.Name = "thôngTinCaNhânToolStripMenuItem";
-            this.thôngTinCaNhânToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thôngTinCaNhânToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.thôngTinCaNhânToolStripMenuItem.Text = "Thông tin cá nhân";
             this.thôngTinCaNhânToolStripMenuItem.Click += new System.EventHandler(this.thôngTinCaNhânToolStripMenuItem_Click);
             // 
             // đăngXuâtToolStripMenuItem
             // 
             this.đăngXuâtToolStripMenuItem.Name = "đăngXuâtToolStripMenuItem";
-            this.đăngXuâtToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.đăngXuâtToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.đăngXuâtToolStripMenuItem.Text = "Đăng xuất";
             this.đăngXuâtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuâtToolStripMenuItem_Click);
             // 
@@ -109,10 +109,11 @@
             // 
             // flpTable
             // 
-            this.flpTable.Location = new System.Drawing.Point(2, 3);
+            this.flpTable.AutoScroll = true;
+            this.flpTable.Location = new System.Drawing.Point(4, 7);
             this.flpTable.Margin = new System.Windows.Forms.Padding(2);
             this.flpTable.Name = "flpTable";
-            this.flpTable.Size = new System.Drawing.Size(418, 414);
+            this.flpTable.Size = new System.Drawing.Size(416, 408);
             this.flpTable.TabIndex = 0;
             // 
             // panel2
