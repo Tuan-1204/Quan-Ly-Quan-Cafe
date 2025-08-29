@@ -61,11 +61,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.dtgvFood = new System.Windows.Forms.DataGridView();
             this.tbFoodCategory = new System.Windows.Forms.TabPage();
-            this.tpTable = new System.Windows.Forms.TabPage();
-            this.tpAccount = new System.Windows.Forms.TabPage();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtCategory = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.txbCategory = new System.Windows.Forms.TextBox();
@@ -77,7 +75,11 @@
             this.btnAddCategory = new System.Windows.Forms.Button();
             this.panel18 = new System.Windows.Forms.Panel();
             this.dtgvCategory = new System.Windows.Forms.DataGridView();
+            this.tpTable = new System.Windows.Forms.TabPage();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.cbTableStatus = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel13 = new System.Windows.Forms.Panel();
             this.txbTableName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -91,10 +93,9 @@
             this.btnAddTable = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
             this.dtgvTable = new System.Windows.Forms.DataGridView();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.cbTableStatus = new System.Windows.Forms.ComboBox();
+            this.tpAccount = new System.Windows.Forms.TabPage();
             this.panel23 = new System.Windows.Forms.Panel();
+            this.btnResetPassword = new System.Windows.Forms.Button();
             this.panel25 = new System.Windows.Forms.Panel();
             this.cbAccountType = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -111,7 +112,6 @@
             this.btnAddAccount = new System.Windows.Forms.Button();
             this.panel29 = new System.Windows.Forms.Panel();
             this.dtgvAccount = new System.Windows.Forms.DataGridView();
-            this.btnResetPassword = new System.Windows.Forms.Button();
             this.tcAdmin.SuspendLayout();
             this.tpBill.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -129,21 +129,21 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).BeginInit();
             this.tbFoodCategory.SuspendLayout();
-            this.tpTable.SuspendLayout();
-            this.tpAccount.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCategory)).BeginInit();
+            this.tpTable.SuspendLayout();
             this.panel11.SuspendLayout();
+            this.panel21.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel19.SuspendLayout();
             this.panel20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTable)).BeginInit();
-            this.panel21.SuspendLayout();
+            this.tpAccount.SuspendLayout();
             this.panel23.SuspendLayout();
             this.panel25.SuspendLayout();
             this.panel26.SuspendLayout();
@@ -465,32 +465,6 @@
             this.tbFoodCategory.Text = "Danh Mục";
             this.tbFoodCategory.UseVisualStyleBackColor = true;
             // 
-            // tpTable
-            // 
-            this.tpTable.Controls.Add(this.panel11);
-            this.tpTable.Controls.Add(this.panel19);
-            this.tpTable.Controls.Add(this.panel20);
-            this.tpTable.Location = new System.Drawing.Point(4, 22);
-            this.tpTable.Name = "tpTable";
-            this.tpTable.Padding = new System.Windows.Forms.Padding(3);
-            this.tpTable.Size = new System.Drawing.Size(767, 399);
-            this.tpTable.TabIndex = 3;
-            this.tpTable.Text = "Bàn ăn";
-            this.tpTable.UseVisualStyleBackColor = true;
-            // 
-            // tpAccount
-            // 
-            this.tpAccount.Controls.Add(this.panel23);
-            this.tpAccount.Controls.Add(this.panel28);
-            this.tpAccount.Controls.Add(this.panel29);
-            this.tpAccount.Location = new System.Drawing.Point(4, 22);
-            this.tpAccount.Name = "tpAccount";
-            this.tpAccount.Padding = new System.Windows.Forms.Padding(3);
-            this.tpAccount.Size = new System.Drawing.Size(767, 399);
-            this.tpAccount.TabIndex = 4;
-            this.tpAccount.Text = "Tài Khoản";
-            this.tpAccount.UseVisualStyleBackColor = true;
-            // 
             // panel12
             // 
             this.panel12.Controls.Add(this.panel15);
@@ -502,19 +476,19 @@
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.textBox2);
+            this.panel15.Controls.Add(this.txtCategory);
             this.panel15.Controls.Add(this.label6);
             this.panel15.Location = new System.Drawing.Point(13, 43);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(293, 31);
             this.panel15.TabIndex = 2;
             // 
-            // textBox2
+            // txtCategory
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 7);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(155, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtCategory.Location = new System.Drawing.Point(126, 7);
+            this.txtCategory.Name = "txtCategory";
+            this.txtCategory.Size = new System.Drawing.Size(155, 20);
+            this.txtCategory.TabIndex = 1;
             // 
             // label6
             // 
@@ -616,6 +590,19 @@
             this.dtgvCategory.Size = new System.Drawing.Size(422, 333);
             this.dtgvCategory.TabIndex = 0;
             // 
+            // tpTable
+            // 
+            this.tpTable.Controls.Add(this.panel11);
+            this.tpTable.Controls.Add(this.panel19);
+            this.tpTable.Controls.Add(this.panel20);
+            this.tpTable.Location = new System.Drawing.Point(4, 22);
+            this.tpTable.Name = "tpTable";
+            this.tpTable.Padding = new System.Windows.Forms.Padding(3);
+            this.tpTable.Size = new System.Drawing.Size(767, 399);
+            this.tpTable.TabIndex = 3;
+            this.tpTable.Text = "Bàn ăn";
+            this.tpTable.UseVisualStyleBackColor = true;
+            // 
             // panel11
             // 
             this.panel11.Controls.Add(this.panel21);
@@ -625,6 +612,33 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(320, 339);
             this.panel11.TabIndex = 9;
+            // 
+            // panel21
+            // 
+            this.panel21.Controls.Add(this.cbTableStatus);
+            this.panel21.Controls.Add(this.label8);
+            this.panel21.Location = new System.Drawing.Point(13, 80);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(293, 31);
+            this.panel21.TabIndex = 3;
+            // 
+            // cbTableStatus
+            // 
+            this.cbTableStatus.FormattingEnabled = true;
+            this.cbTableStatus.Location = new System.Drawing.Point(126, 4);
+            this.cbTableStatus.Name = "cbTableStatus";
+            this.cbTableStatus.Size = new System.Drawing.Size(155, 21);
+            this.cbTableStatus.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(1, 8);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(100, 19);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Trạng Thái :";
             // 
             // panel13
             // 
@@ -742,32 +756,18 @@
             this.dtgvTable.Size = new System.Drawing.Size(422, 333);
             this.dtgvTable.TabIndex = 0;
             // 
-            // panel21
+            // tpAccount
             // 
-            this.panel21.Controls.Add(this.cbTableStatus);
-            this.panel21.Controls.Add(this.label8);
-            this.panel21.Location = new System.Drawing.Point(13, 80);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(293, 31);
-            this.panel21.TabIndex = 3;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1, 8);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 19);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Trạng Thái :";
-            // 
-            // cbTableStatus
-            // 
-            this.cbTableStatus.FormattingEnabled = true;
-            this.cbTableStatus.Location = new System.Drawing.Point(126, 4);
-            this.cbTableStatus.Name = "cbTableStatus";
-            this.cbTableStatus.Size = new System.Drawing.Size(155, 21);
-            this.cbTableStatus.TabIndex = 1;
+            this.tpAccount.Controls.Add(this.panel23);
+            this.tpAccount.Controls.Add(this.panel28);
+            this.tpAccount.Controls.Add(this.panel29);
+            this.tpAccount.Location = new System.Drawing.Point(4, 22);
+            this.tpAccount.Name = "tpAccount";
+            this.tpAccount.Padding = new System.Windows.Forms.Padding(3);
+            this.tpAccount.Size = new System.Drawing.Size(767, 399);
+            this.tpAccount.TabIndex = 4;
+            this.tpAccount.Text = "Tài Khoản";
+            this.tpAccount.UseVisualStyleBackColor = true;
             // 
             // panel23
             // 
@@ -779,7 +779,15 @@
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(349, 339);
             this.panel23.TabIndex = 6;
-           
+            // 
+            // btnResetPassword
+            // 
+            this.btnResetPassword.Location = new System.Drawing.Point(228, 120);
+            this.btnResetPassword.Name = "btnResetPassword";
+            this.btnResetPassword.Size = new System.Drawing.Size(106, 36);
+            this.btnResetPassword.TabIndex = 5;
+            this.btnResetPassword.Text = "Đặt lại mật khẩu";
+            this.btnResetPassword.UseVisualStyleBackColor = true;
             // 
             // panel25
             // 
@@ -870,7 +878,6 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(399, 42);
             this.panel28.TabIndex = 5;
-           
             // 
             // btnShowAccount
             // 
@@ -915,7 +922,6 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(399, 339);
             this.panel29.TabIndex = 4;
-           
             // 
             // dtgvAccount
             // 
@@ -924,15 +930,6 @@
             this.dtgvAccount.Name = "dtgvAccount";
             this.dtgvAccount.Size = new System.Drawing.Size(396, 333);
             this.dtgvAccount.TabIndex = 0;
-            // 
-            // btnResetPassword
-            // 
-            this.btnResetPassword.Location = new System.Drawing.Point(228, 120);
-            this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.Size = new System.Drawing.Size(106, 36);
-            this.btnResetPassword.TabIndex = 5;
-            this.btnResetPassword.Text = "Đặt lại mật khẩu";
-            this.btnResetPassword.UseVisualStyleBackColor = true;
             // 
             // FAdmin
             // 
@@ -965,8 +962,6 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvFood)).EndInit();
             this.tbFoodCategory.ResumeLayout(false);
-            this.tpTable.ResumeLayout(false);
-            this.tpAccount.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
@@ -975,7 +970,10 @@
             this.panel17.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvCategory)).EndInit();
+            this.tpTable.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.panel14.ResumeLayout(false);
@@ -983,8 +981,7 @@
             this.panel19.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvTable)).EndInit();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
+            this.tpAccount.ResumeLayout(false);
             this.panel23.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
@@ -1039,7 +1036,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCategory;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.TextBox txbCategory;

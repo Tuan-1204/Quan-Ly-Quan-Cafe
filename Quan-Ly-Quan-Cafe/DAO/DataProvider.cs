@@ -64,7 +64,7 @@ namespace Quan_Ly_Quan_Cafe.DAO
                 SqlDataAdapter adapter = new SqlDataAdapter(command); // trung gian thực hiện câu lệnh truy vấn
                 adapter.Fill(data); // đổ dữ liệu vào data table
                                     //đóng kết nối
-                connection.Close();
+connection.Close();
             }
             return data;
         }

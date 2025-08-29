@@ -32,11 +32,11 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txbPassWord = new System.Windows.Forms.TextBox();
             this.txbMatKhau = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txbUserName = new System.Windows.Forms.TextBox();
             this.lblTenDangNhap = new System.Windows.Forms.Label();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.txtPassWord = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -76,20 +76,12 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.txbPassWord);
+            this.panel3.Controls.Add(this.txtPassWord);
             this.panel3.Controls.Add(this.txbMatKhau);
             this.panel3.Location = new System.Drawing.Point(43, 67);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(425, 34);
             this.panel3.TabIndex = 1;
-            // 
-            // txbPassWord
-            // 
-            this.txbPassWord.Location = new System.Drawing.Point(162, 8);
-            this.txbPassWord.Name = "txbPassWord";
-            this.txbPassWord.Size = new System.Drawing.Size(252, 20);
-            this.txbPassWord.TabIndex = 2;
-            this.txbPassWord.UseSystemPasswordChar = true;
             // 
             // txbMatKhau
             // 
@@ -103,19 +95,12 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txbUserName);
+            this.panel2.Controls.Add(this.txtUserName);
             this.panel2.Controls.Add(this.lblTenDangNhap);
             this.panel2.Location = new System.Drawing.Point(43, 27);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(425, 34);
             this.panel2.TabIndex = 0;
-            // 
-            // txbUserName
-            // 
-            this.txbUserName.Location = new System.Drawing.Point(162, 7);
-            this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(252, 20);
-            this.txbUserName.TabIndex = 1;
             // 
             // lblTenDangNhap
             // 
@@ -126,6 +111,21 @@
             this.lblTenDangNhap.Size = new System.Drawing.Size(142, 19);
             this.lblTenDangNhap.TabIndex = 0;
             this.lblTenDangNhap.Text = "Tên Đăng Nhập : ";
+            // 
+            // txtUserName
+            // 
+            this.txtUserName.Location = new System.Drawing.Point(152, 9);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(262, 20);
+            this.txtUserName.TabIndex = 1;
+            // 
+            // txtPassWord
+            // 
+            this.txtPassWord.Location = new System.Drawing.Point(152, 9);
+            this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.Size = new System.Drawing.Size(262, 20);
+            this.txtPassWord.TabIndex = 2;
+            this.txtPassWord.UseSystemPasswordChar = true;
             // 
             // FLogin
             // 
@@ -159,6 +159,8 @@
         private System.Windows.Forms.Label txbMatKhau;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.TextBox txtPassWord;
+        private System.Windows.Forms.TextBox txtUserName;
     }
 }
 
