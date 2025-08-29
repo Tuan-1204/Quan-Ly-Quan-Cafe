@@ -43,9 +43,12 @@ namespace Quan_Ly_Quan_Cafe
 
 
         // nhiệm vụ xử ký tầng hiển thị
-        bool Login(string userName, string password)
+        public bool Login(string userName, string passWord)
         {
-           return AccountDAO.Instance.Login(userName,password);
+            string query = "SELECT * FROM dbo.Account WHERE UserName = @userName AND PassWord = @passWord";
+            object[] parameters = new object[] { userName, passWord };
+            DataTable result = DataProvider.Instance.ExecuteQuery(query, parameters);
+            return result.Rows.Count > 0;
         }
 
         // Sự kiện khi nhấn nút "Thoát"
